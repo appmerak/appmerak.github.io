@@ -33,6 +33,31 @@
     .cta{text-align:center;padding:100px 20px;background:radial-gradient(circle at center,rgba(240,196,90,.1),transparent 60%)}.cta h2{font-size:46px;letter-spacing:-2px;margin:0 0 14px}.cta p{color:var(--muted)}
     footer{padding:40px 0;border-top:1px solid var(--line);color:#8993a2;font-size:13px}.foot{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap}.footlinks{display:flex;gap:18px;flex-wrap:wrap}
     @media(max-width:800px){.links{display:none}.heroGrid,.about{grid-template-columns:1fr}.heroGrid{text-align:center}.lead{margin:auto}.actions{justify-content:center}.grid3,.rabbitFlow{grid-template-columns:1fr}.phone{margin-top:20px}h1{letter-spacing:-2px}.heroGrid{padding:60px 0}}
+
+    /* Görsel vitrin */
+    .visualIntro{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
+    .visualIntro img{width:100%;max-height:720px;object-fit:contain;border-radius:24px;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.42)}
+    .gallery{display:grid;grid-template-columns:repeat(2,1fr);gap:24px}
+    .gallery figure{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:22px;padding:10px;overflow:hidden}
+    .gallery img{width:100%;display:block;border-radius:15px}
+    .gallery figcaption{padding:12px 8px 5px;color:var(--muted);font-size:13px}
+    .gallery figure:first-child{grid-column:1/-1;max-width:680px;width:100%;justify-self:center}
+
+    /* Reklam yerleşim önizlemesi: AdSense onayından sonra Auto Ads uygun alanları kullanır */
+    .ad-preview{margin:34px auto;border:1px dashed #596474;border-radius:16px;min-height:110px;display:flex;align-items:center;justify-content:center;text-align:center;background:rgba(255,255,255,.018);color:#788596;font-size:12px;letter-spacing:.08em}
+    .ad-preview span{display:block}
+    .ad-preview strong{display:block;color:#aab3c0;font-size:13px;margin-bottom:5px}
+    .ad-wide{max-width:970px}
+    .ad-mid{max-width:728px}
+
+    .visualSection{padding:90px 0;border-top:1px solid rgba(255,255,255,.05)}
+    @media(max-width:800px){
+      .visualIntro,.gallery{grid-template-columns:1fr}
+      .gallery figure:first-child{grid-column:auto}
+      .visualIntro{text-align:center}
+      .ad-preview{min-height:90px}
+    }
+
   </style>
 </head>
 <body>
@@ -60,6 +85,12 @@
   </div>
 </header>
 
+<div class="wrap">
+  <div class="ad-preview ad-wide" aria-label="Reklam alanı önizlemesi">
+    <span><strong>REKLAM ALANI</strong>AdSense Auto Ads için uygun yatay alan</span>
+  </div>
+</div>
+
 <main>
 <section id="nedir"><div class="wrap">
   <div class="sectionHead"><div class="eyebrow">MeR@K Nedir?</div><h2>Kaydır, keşfet, bağlantıyı takip et.</h2><p>MeR@K klasik bir bilgi listesi değil. Her bilgi yeni bir soruya, her soru yeni bir keşfe açılır.</p></div>
@@ -68,7 +99,7 @@
     <article class="feature"><div class="num">02</div><h3>Detaya istediğin kadar in</h3><p>İlgini çeken bilginin arka planını, bağlamını ve bağlantılı konularını keşfet.</p></article>
     <article class="feature"><div class="num">03</div><h3>Tavşan Deliği</h3><p>Bir konudan diğerine anlamlı bağlantılarla ilerle. Nerede biteceğini merakın belirlesin.</p></article>
   </div>
-  <div class="adspace">AdSense reklam alanı — site onaylandıktan sonra otomatik reklamlar burada ve uygun alanlarda gösterilebilir.</div>
+  <div class="ad-preview ad-mid"><span><strong>REKLAM ALANI</strong>İçerik arası reklam yerleşimi</span></div>
 </div></section>
 
 <section id="nasil"><div class="wrap">
@@ -80,6 +111,34 @@
     <div class="step"><small>4 · DERİNE İN</small><strong>Tavşan deliğinin seni nereye götürdüğünü gör.</strong></div>
   </div>
 </div></section>
+
+<section class="visualSection" id="uygulamadan">
+  <div class="wrap">
+    <div class="sectionHead">
+      <div class="eyebrow">Uygulamadan</div>
+      <h2>Merakın peşinden git.</h2>
+      <p>Keşfet ekranından Tavşan Deliği'ne, kategorilerden aramaya kadar MeR@K'ın keşif deneyimine yakından bak.</p>
+    </div>
+
+    <div class="visualIntro">
+      <img src="merak-01.png" loading="lazy" alt="MeR@K keşfet ekranı">
+      <div>
+        <div class="eyebrow">Keşfet</div>
+        <h2>Her kaydırmada yeni bir dünya.</h2>
+        <p class="lead">Kısa ama şaşırtıcı bilgilerle başla. İlgini çeken konunun detayına in ve bağlantılı merakların peşinden ilerle.</p>
+      </div>
+    </div>
+
+    <div class="ad-preview ad-wide"><span><strong>REKLAM ALANI</strong>Görsel içerik sonrası yatay reklam alanı</span></div>
+
+    <div class="gallery">
+      <figure><img src="merak-03.png" loading="lazy" alt="MeR@K Tavşan Deliği"><figcaption>Tavşan Deliği — bir bilgi yeni bir meraka dönüşür.</figcaption></figure>
+      <figure><img src="merak-04.png" loading="lazy" alt="MeR@K kategoriler"><figcaption>Kategoriler — tarih, bilim, doğa, teknoloji ve daha fazlası.</figcaption></figure>
+      <figure><img src="merak-05.png" loading="lazy" alt="MeR@K arama"><figcaption>Arama — aklındaki merakı doğrudan bul.</figcaption></figure>
+      <figure><img src="merak-02.png" loading="lazy" alt="MeR@K keşif akışı"><figcaption>Keşif — bağlantılı konularla merak zincirini sürdür.</figcaption></figure>
+    </div>
+  </div>
+</section>
 
 <section id="biz"><div class="wrap about">
   <div><div class="eyebrow">Biz Kimiz?</div><h2>Merakın peşinden giden bir fikir.</h2></div>
@@ -94,7 +153,7 @@
 
 <footer><div class="wrap foot">
   <div>© 2026 MeR@K · Bilmediğini değil, merak etmediğini keşfet.</div>
-  <div class="footlinks"><a href="privacy.html">Gizlilik Politikası</a><a href="terms.html">Kullanım Koşulları</a><a href="delete-account.html">Hesap Silme</a><a href="mailto:appmerak@gmail.com">İletişim</a></div>
+  <div class="footlinks"><a href="/merak-legal/privacy.html">Gizlilik Politikası</a><a href="/merak-legal/terms.html">Kullanım Koşulları</a><a href="/merak-legal/delete-account.html">Hesap Silme</a><a href="mailto:appmerak@gmail.com">İletişim</a></div>
 </div></footer>
 </body>
 </html>
