@@ -58,6 +58,16 @@
       .ad-preview{min-height:90px}
     }
 
+
+    /* Final kompakt tanıtım bannerı */
+    .promo-banner{margin-top:32px;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--panel);box-shadow:0 20px 55px rgba(0,0,0,.28)}
+    .promo-banner img{display:block;width:100%;height:auto;max-height:520px;object-fit:cover}
+    .promo-note{padding:14px 18px;color:var(--muted);font-size:13px;text-align:center}
+    @media(max-width:800px){
+      .promo-banner{border-radius:18px;margin-top:24px}
+      .promo-banner img{max-height:none}
+    }
+
   </style>
 </head>
 <body>
@@ -112,33 +122,14 @@
   </div>
 </div></section>
 
-<section class="visualSection" id="uygulamadan">
-  <div class="wrap">
-    <div class="sectionHead">
-      <div class="eyebrow">Uygulamadan</div>
-      <h2>Merakın peşinden git.</h2>
-      <p>Keşfet ekranından Tavşan Deliği'ne, kategorilerden aramaya kadar MeR@K'ın keşif deneyimine yakından bak.</p>
-    </div>
 
-    <div class="visualIntro">
-      <img src="merak-01.png" loading="lazy" alt="MeR@K keşfet ekranı">
-      <div>
-        <div class="eyebrow">Keşfet</div>
-        <h2>Her kaydırmada yeni bir dünya.</h2>
-        <p class="lead">Kısa ama şaşırtıcı bilgilerle başla. İlgini çeken konunun detayına in ve bağlantılı merakların peşinden ilerle.</p>
-      </div>
-    </div>
-
-    <div class="ad-preview ad-wide"><span><strong>REKLAM ALANI</strong>Görsel içerik sonrası yatay reklam alanı</span></div>
-
-    <div class="gallery">
-      <figure><img src="merak-03.png" loading="lazy" alt="MeR@K Tavşan Deliği"><figcaption>Tavşan Deliği — bir bilgi yeni bir meraka dönüşür.</figcaption></figure>
-      <figure><img src="merak-04.png" loading="lazy" alt="MeR@K kategoriler"><figcaption>Kategoriler — tarih, bilim, doğa, teknoloji ve daha fazlası.</figcaption></figure>
-      <figure><img src="merak-05.png" loading="lazy" alt="MeR@K arama"><figcaption>Arama — aklındaki merakı doğrudan bul.</figcaption></figure>
-      <figure><img src="merak-02.png" loading="lazy" alt="MeR@K keşif akışı"><figcaption>Keşif — bağlantılı konularla merak zincirini sürdür.</figcaption></figure>
-    </div>
+<div class="wrap">
+  <div class="promo-banner">
+    <img src="Banner01.png" alt="MeR@K uygulaması tanıtım bannerı" loading="lazy">
+    <div class="promo-note">Bilmediğini değil, merak etmediğini keşfet.</div>
   </div>
-</section>
+  <div class="ad-preview ad-wide"><span><strong>REKLAM ALANI</strong>Tanıtım bannerı sonrası yatay reklam alanı</span></div>
+</div>
 
 <section id="biz"><div class="wrap about">
   <div><div class="eyebrow">Biz Kimiz?</div><h2>Merakın peşinden giden bir fikir.</h2></div>
