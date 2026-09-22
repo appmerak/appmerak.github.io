@@ -59,13 +59,18 @@
     }
 
 
-    /* Final kompakt tanıtım bannerı */
-    .promo-banner{margin-top:32px;border:1px solid var(--line);border-radius:24px;overflow:hidden;background:var(--panel);box-shadow:0 20px 55px rgba(0,0,0,.28)}
-    .promo-banner img{display:block;width:100%;height:auto;max-height:520px;object-fit:cover}
-    .promo-note{padding:14px 18px;color:var(--muted);font-size:13px;text-align:center}
+    /* MeR@K final uygulama vitrini */
+    .app-showcase{padding:18px 0 72px}
+    .screen-strip{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:28px}
+    .screen-card{margin:0;background:var(--panel);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 14px 36px rgba(0,0,0,.24)}
+    .screen-card img{display:block;width:100%;aspect-ratio:4/5;object-fit:cover}
+    .screen-card figcaption{padding:11px 12px;color:var(--muted);font-size:12px;text-align:center}
+    .main-banner{margin-top:22px;border:1px solid var(--line);border-radius:22px;overflow:hidden;background:var(--panel);box-shadow:0 18px 48px rgba(0,0,0,.28)}
+    .main-banner img{display:block;width:100%;height:auto}
     @media(max-width:800px){
-      .promo-banner{border-radius:18px;margin-top:24px}
-      .promo-banner img{max-height:none}
+      .screen-strip{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+      .screen-card{border-radius:14px}
+      .main-banner{border-radius:16px}
     }
 
   </style>
@@ -123,13 +128,22 @@
 </div></section>
 
 
-<div class="wrap">
-  <div class="promo-banner">
-    <img src="Banner01.png" alt="MeR@K uygulaması tanıtım bannerı" loading="lazy">
-    <div class="promo-note">Bilmediğini değil, merak etmediğini keşfet.</div>
+<section class="app-showcase" id="uygulama">
+  <div class="wrap">
+    <div class="screen-strip">
+      <figure class="screen-card"><img src="merak-01.png" alt="1 - MeR@K Keşfet" loading="lazy"><figcaption>1 · Keşfet</figcaption></figure>
+      <figure class="screen-card"><img src="merak-02.png" alt="2 - MeR@K Oku" loading="lazy"><figcaption>2 · Oku</figcaption></figure>
+      <figure class="screen-card"><img src="merak-03.png" alt="3 - MeR@K Derinleş" loading="lazy"><figcaption>3 · Derinleş</figcaption></figure>
+      <figure class="screen-card"><img src="merak-04.png" alt="4 - MeR@K Ara" loading="lazy"><figcaption>4 · Keşfetmeye devam et</figcaption></figure>
+    </div>
+
+    <div class="main-banner">
+      <img src="Banner01.png" alt="MeR@K - Bilmediğini değil, merak etmediğini keşfet" loading="lazy">
+    </div>
+
+    <div class="ad-preview ad-wide"><span><strong>REKLAM ALANI</strong>Banner sonrası AdSense alanı</span></div>
   </div>
-  <div class="ad-preview ad-wide"><span><strong>REKLAM ALANI</strong>Tanıtım bannerı sonrası yatay reklam alanı</span></div>
-</div>
+</section>
 
 <section id="biz"><div class="wrap about">
   <div><div class="eyebrow">Biz Kimiz?</div><h2>Merakın peşinden giden bir fikir.</h2></div>
